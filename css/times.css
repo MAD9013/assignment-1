@@ -212,19 +212,27 @@ h1.story-title {}
 
 .story blockquote {
     quotes: "\201C" "\201D";
-    margin: 25px 0px;
-    text-align: center;
-    font-weight: 700;
+    /*margin: 25px 60px;*/
+    text-align: justify;
+    font-weight: 800;
+    color: hsl(0, 0%, 39%);
+    margin: 0 auto;
+    width: 300px;
+    line-height: 2.2em;
+
 }
 
-.story blockquote:nth-child(1)::before {
+
+
+.story blockquote::before {
     content: open-quote;
-    font-size: 3em;
+    font-size: 4em;
     line-height: 0.1em;
     margin-right: 0.25em;
     vertical-align: -0.4em;
     color: hsl(0, 0%, 0%);
 }
+
 
 .story blockquote::after {
     content: close-quote;
@@ -233,6 +241,39 @@ h1.story-title {}
     margin-right: 0.25em;
     vertical-align: -0.4em;
     color: hsl(0, 0%, 0%);
+}
+
+.story:nth-child(1) blockquote {}
+
+.story:nth-child(2) blockquote {}
+
+.story:nth-child(1) blockquote::before {
+    /*vertical-align: -0.6em;*/
+}
+
+.story:nth-child(1) blockquote::after {
+    line-height: 0.1em;
+    margin-left: 3.5em;
+    vertical-align: -0.7em;
+}
+
+.story:nth-child(2) blockquote::before {}
+
+.story:nth-child(2) blockquote::after {
+
+    line-height: 0.1em;
+    margin-left: 0.7em;
+    vertical-align: -0.8em;
+}
+
+.story:nth-child(3) blockquote::before {
+    /*vertical-align: -0.6em;*/
+}
+
+.story:nth-child(3) blockquote::after {
+    line-height: 0em;
+    margin-left: 4em;
+    vertical-align: -0.6em;
 }
 
 /*
